@@ -1,7 +1,10 @@
 /**
-* Author: Kobe Michiels <kobe.michiels2@student.kuleuven.be>
-* Team: HOME2
-* Date: February - March 2024
+* Filename: stm8_mp3.c
+* Author: Kobe Michiels <kobe.michiels@outlook.com>
+* Date: 23-06-2024
+* Dependencies: 
+    - STM8s Standard Peripheral Library
+    - stm8_mp3.h
 */
 
 #include "stm8_mp3.h"
