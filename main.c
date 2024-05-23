@@ -1,4 +1,12 @@
-/* Includes ------------------------------------------------------------------*/
+/*
+* Filename: main.c
+* Author: Kobe Michiels <kobe.michiels@outlook.com>
+* Date: 23-06-2024
+* Dependencies: 
+    - STM8s Standard Peripheral Library
+    - stm8_mp3.h
+*/
+
 #include "stm8s.h"
 #include "stm8_mp3.h"
 
