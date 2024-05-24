@@ -38,13 +38,18 @@ void mp3_execute_command(uint8_t command, uint8_t data1, uint8_t data2){
 }
 
 void mp3_init(void){
-		UART2_DeInit();
-		/** Baud Rate 9600, 8 bits Data, One stop bit is  transmitted at the end of frame, No Parity, Sync mode Disable, SLK pin Disable, Transmit Enable and Receive Enable */
-		UART2_Init(9600, UART2_WORDLENGTH_8D, UART2_STOPBITS_1, UART2_PARITY_NO, UART2_SYNCMODE_CLOCK_DISABLE, UART2_MODE_TXRX_ENABLE);
-		UART2_Cmd(ENABLE);
-    mp3_reset_chip();
-    mp3_select_storage_device(0x02); // Select SD card as storage device
-    mp3_set_volume(0x00, 0x0A);     // Set the volume to level 10 (0x0A)
+    UART2_DeInit(); // Deinitializes the UART peripheral
+    UART2_Init( // Initializes the UART2 according to the specified parameters.
+      9600, // Baud Rate 9600
+      UART2_WORDLENGTH_8D, // 8 bits Data
+      UART2_STOPBITS_1, // One stop bit is  transmitted at the end of frame
+      UART2_PARITY_NO, // No Parity
+      UART2_SYNCMODE_CLOCK_DISABLE, // Sync mode Disable, SLK pin Disable
+      UART2_MODE_TXRX_ENABLE // Transmit Enable and Receive Enable
+    ); 
+    UART2_Cmd(ENABLE); // Enable the UART2 peripheral
+  
+    mp3_reset_chip(); // Reset the chip
 }
 
 void mp3_play_next(){

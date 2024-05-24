@@ -24,8 +24,7 @@ void mp3_execute_command(uint8_t command, uint8_t data1, uint8_t data2);
 
 /**
 * This function is responsible for initializing the mp3 module.
-* It enables the UART, resets the module and sets some basic configurations.
-* For the storage device is selects SD card and for the volume is selects level 10.
+* It enables the UART and resets the module.
 */
 void mp3_init(void);
 

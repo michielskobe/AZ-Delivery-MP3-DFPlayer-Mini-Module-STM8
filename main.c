@@ -12,9 +12,10 @@
 
 void main(void)
 {
-	mp3_init();
-	mp3_set_volume(0x00, 0x0A);
-	mp3_play_with_index(0x00, 0x01);
+	mp3_init(); // Initializes the the UART peripheral and resets the MP3 chip
+	mp3_select_storage_device(0x02); // Select SD card as storage device
+        mp3_set_volume(0x00, 0x0A);     // Set the volume to level 10 (0x0A)
+	mp3_play_with_index(0x00, 0x01); // Play song with index 0001
 }
 
 #ifdef USE_FULL_ASSERT
