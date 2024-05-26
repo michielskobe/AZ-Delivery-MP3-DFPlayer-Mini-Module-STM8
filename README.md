@@ -8,8 +8,8 @@ This is a simple library I wrote for the AZ-Delivery MP3 DFPlayer Mini Module. I
 ### Cloning the repository
 
 ```bash
-$ git clone git@github.com:michielskobe/AZ-Delivery-MP3-DFPlayer-Mini-Module-STM8.git
-$ cd AZ-Delivery-MP3-DFPlayer-Mini-Module-STM8
+$ git clone git@github.com:michielskobe/az-delivery-mini-mp3-dfplayer.git
+$ cd az-delivery-mini-mp3-dfplayer
 ```
 
 ### Downloading the STM8s Standard Peripheral Library
