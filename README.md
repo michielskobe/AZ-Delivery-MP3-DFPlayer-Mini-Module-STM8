@@ -1,4 +1,4 @@
-# AZ-Delivery-MP3-DFPlayer-Mini-Module-STM8
+#     az-delivery-mini-mp3-dfplayer
 
 ## Description
 This is a simple library I wrote for the AZ-Delivery MP3 DFPlayer Mini Module. I wrote it specifically for an STM8S105K4 microcontroller and these files should be used in combination with the STM8s Standard Peripheral Library. The *main.c* file gives an example of how the code can be used. Please refer to the datasheet (*Datasheet-AZ-Delivery-MP3-DFPlayer-Mini-Module.pdf*) for more information about the code's working principle.
